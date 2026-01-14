@@ -21,7 +21,7 @@ export default function Hero() {
             .from(subtitle.lines, { y: -50, autoAlpha: 0, stagger: 0.1, duration: 0.8 }, "-=0.5")
             .from(body.lines, { x: 100, autoAlpha: 0, stagger: 0.15, duration: 0.8 }, "-=0.6")
             .from(button.lines, { x: -50, autoAlpha: 0, stagger: 0.05, duration: 0.6 }, "-=0.5")
-            .from('.hero-img', { y: 500, autoAlpha: 0, ease: 'expo.out', duration: 1, delay: 0.1 }, "-=0.5");
+            .from('.hero-img', { y: 500, autoAlpha:0,ease: 'expo.out', duration: 1, delay: 0.1 }, "-=0.5");
     },[])
 
     return (
@@ -31,7 +31,6 @@ export default function Hero() {
             alt="greek statue" 
             width={600} height={600}
             className="hero-img z-10 absolute -bottom-30 lg:-bottom-70"
-            loading="eager"
         />
 
         <h1 className="hero-title text-white text-[88px] lg:text-[350px]">ARSNOVA</h1>

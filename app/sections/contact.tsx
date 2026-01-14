@@ -37,7 +37,7 @@ export default function Contact() {
         <section id="contact" className="contact overflow-hidden relative flex flex-col py-30 items-center h-[80vh] lg:h-screen">
             <h1 className="text-[55px] lg:text-[250px] lg:-mb-10">CONTACT ME</h1>
             <p className="text-xs lg:text-base text-neutral-500 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-            <button className="mt-10 bg-neutral-950 border border-neutral-950 text-neutral-50 rounded-full px-6 py-1 cursor-pointer">arsnova@gmail.com</button>
+            <button className="mt-10 bg-neutral-950 border border-neutral-950 text-neutral-50 rounded-full px-6 py-1 cursor-pointer">placidoalvaro03@gmail.com</button>
 
                 <Image 
                     src={'/hand-left.png'}
