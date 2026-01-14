@@ -1,26 +1,134 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Amoria';
+  src: url('/fonts/AMORIA.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: 'Conthrax';
+  src: url('/fonts/Conthrax-SemiBold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navlist a {
+  position: relative;
+}
+
+.navlist a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #DD3232;
+  transition: .3s;
+}
+
+.navlist a:hover::before {
+  width: 50%;
+}
+
+h1 {
+  font-family: 'Amoria';
+}
+
+h2,a {
+  font-family: 'Conthrax';
+}
+
+p, li {
+  font-family: 'Poppins';
+}
+
+.hero-btn {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  z-index: 10;
+  transition: .4s ease-in-out;
+}
+
+.hero-btn::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: white;
+  left: -85px;
+  top: 10;
+  transition: .3s ease-in-out;
+}
+
+.hero-btn:hover {
+  color: black;
+}
+
+.hero-btn:hover::before{
+  left: 0;
+  transform: scale(3);
+  z-index: 0;
+}
+
+
+.what-i-do .skill {
+  transition: .3s;
+}
+
+.what-i-do .skill:hover {
+  color: black; 
+  padding-left: 2rem;
+}
+
+.what-i-do h3 {
+  font-family: 'BebasNeue';
+}
+
+.what-i-do span {
+  font-family: 'BebasNeue';
+}
+
+.what-i-do .content::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-left: solid rgb(43, 43, 43) 3px;
+    border-bottom: solid rgb(43, 43, 43) 3px;
+    bottom: -30px;
+    left: -30px;
+}
+
+.what-i-do .content::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-right: solid rgb(43, 43, 43) 3px;
+    border-top: solid rgb(43, 43, 43) 3px;
+    top: -30px;
+    right: -30px;
+}
+
