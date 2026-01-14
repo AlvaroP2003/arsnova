@@ -27,7 +27,7 @@ export default function Hero() {
     return (
     <section className="relative bg-neutral-950 hero flex flex-col py-50 justify-start items-center h-[88vh] mb-50 lg:py-0 lg:px-50 overflow-hidden">
         <Image 
-            src={'/hero-img.png'}
+            src={'/hero-img.webp'}
             alt="greek statue" 
             width={600} height={600}
             className="hero-img z-10 absolute -bottom-30 lg:-bottom-70"
