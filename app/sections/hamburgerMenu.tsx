@@ -6,7 +6,12 @@ import { useGSAP } from "@gsap/react"
 import { SplitText } from "gsap/all"
 gsap.registerPlugin(SplitText)
 
-export default function HamburgerMenu({setMenuOpen}) {
+interface HamburgerMenuProps {
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+
+export default function HamburgerMenu({setMenuOpen}: HamburgerMenuProps) {
 
     useGSAP(() => {
         gsap.from('.link', {
