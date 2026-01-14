@@ -15,10 +15,10 @@ export default function HamburgerMenu({setMenuOpen}: HamburgerMenuProps) {
 
     useGSAP(() => {
         gsap.from('.link', {
-            y:-100,
+            y:-25,
             autoAlpha:0,
             stagger:0.25,
-            duration:2,
+            duration:1,
             ease:'expo.out'
         })
     },[])

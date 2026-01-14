@@ -87,23 +87,26 @@ export default function WhatIdo () {
         ))}
     </div>
 
-      <div className="hidden lg:block content relative h-[550px] w-[550px] overflow-hidden">
-        <div 
-          className='flex flex-col h-[1650px]'
-          style={{ transition:'0.5s' , transform: `translateY(-${activeImg * 550}px)` }}
-        >
-          {[1, 2, 4].map((n) => (
-            <div key={n} className="relative h-[550px] w-[550px]">
-              <Image
-                src={`/work-${n}.jpg`}
-                alt="work image"
-                fill
-                className="object-cover"
-              />
+      <div className='content hidden lg:block relative h-[550px] w-[550px]'>
+        <div className="relative h-full w-full overflow-hidden">
+            <div 
+              className='flex flex-col h-[1650px]'
+              style={{ transition:'0.5s' , transform: `translateY(-${activeImg * 550}px)` }}
+            >
+              {[1, 2, 4].map((n) => (
+                <div key={n} className="relative h-[550px] w-[550px]">
+                  <Image
+                    src={`/work-${n}.jpg`}
+                    alt="work image"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
       </div>
+      
     </div>
       
 

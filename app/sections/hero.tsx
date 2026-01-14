@@ -35,7 +35,7 @@ export default function Hero() {
 
         <h1 className="hero-title text-white text-[88px] lg:text-[350px]">ARSNOVA</h1>
         <div className="text-white w-full flex justify-center lg:justify-between -mt-5 lg:-mt-25">
-            <h2 className="subtitle text-2xl lg:text-5xl h-fit">WEB DESIGNER</h2>
+            <h2 className="subtitle text-2xl lg:text-5xl h-fit">WEB DESIGNS</h2>
 
             <div className="flex-col items-start gap-2.5 w-[400px] text-neutral-400 hidden lg:flex">
                 <p className="body font-light">“Design is not just what you see, it’s how it works. We craft experiences that speak and perform.”</p>
