@@ -3,9 +3,12 @@
 import { Menu } from "lucide-react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
-import { useState } from "react"
 
-export default function Header({setMenuOpen}) {
+interface HeaderProps {
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export default function Header({setMenuOpen}:HeaderProps) {
 
 
   useGSAP(() => {
