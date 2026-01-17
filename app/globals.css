@@ -34,6 +34,15 @@ html {
 
 .hero-title {
   font-size: clamp(5rem, 20vw + 0.02rem, 1990px);
+    background: linear-gradient(
+    to top,
+    #5c5c5c, 
+    #c2c2c2,
+    #ffffff
+  );  
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navlist a {
