@@ -12,7 +12,6 @@ export default function Header({setMenuOpen}:HeaderProps) {
 
 
   useGSAP(() => {
-
     gsap.from('.list', {
       x:600,
       duration:2,

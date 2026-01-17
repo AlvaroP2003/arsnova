@@ -30,11 +30,11 @@ export default function Hero() {
             src={'/hero-img.webp'}
             alt="greek statue" 
             width={600} height={600}
-            className="hero-img z-10 absolute -bottom-30 lg:-bottom-70"
+            className="hero-img z-10 absolute -bottom-40 lg:-bottom-70"
         />
 
-        <h1 className="hero-title text-white text-[88px] lg:text-[350px]">ARSNOVA</h1>
-        <div className="text-white w-full flex justify-center lg:justify-between -mt-5 lg:-mt-25">
+        <h1 className="hero-title text-white -mb-5 lg:-mb-15">ARSNOVA</h1>
+        <div className="text-white w-full flex justify-center lg:justify-between">
             <h2 className="subtitle text-2xl lg:text-5xl h-fit">WEB DESIGNS</h2>
 
             <div className="flex-col items-start gap-2.5 w-[400px] text-neutral-400 hidden lg:flex">
