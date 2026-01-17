@@ -30,7 +30,7 @@ export default function Hero() {
             src={'/hero-img.webp'}
             alt="greek statue" 
             width={600} height={600}
-            className="hero-img z-10 absolute -bottom-40 lg:-bottom-70"
+            className="hero-img z-10 absolute -bottom-[17vh] lg:-bottom-70"
         />
 
         <h1 className="hero-title text-white -mb-5 lg:-mb-15">ARSNOVA</h1>
